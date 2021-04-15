@@ -5,7 +5,7 @@ A repo to help better understand Celo transaction structure and tools to send tr
 ## Requirements
 
 - familiarity with Javascript and basic web development 
-- have the `yarn`
+- have `yarn` installed
 
 ## Get started 
 
