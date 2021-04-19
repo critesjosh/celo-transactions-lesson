@@ -2,6 +2,10 @@
 
 A repo to help better understand Celo transaction structure and tools to send transactions
 
+## Workshop
+
+![](http://img.youtube.com/vi/rwq14V9e2hU/0.jpg)
+
 ## Requirements
 
 - familiarity with Javascript and basic web development 
