@@ -4,7 +4,7 @@ A repo to help better understand Celo transaction structure and tools to send tr
 
 ## Workshop
 
-![](http://img.youtube.com/vi/rwq14V9e2hU/0.jpg)
+[![](http://img.youtube.com/vi/rwq14V9e2hU/0.jpg)](http://www.youtube.com/watch?v=rwq14V9e2hU)
 
 ## Requirements
 
