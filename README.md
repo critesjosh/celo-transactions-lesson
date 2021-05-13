@@ -29,4 +29,4 @@ Recording:
 
 `cd` into the `webpage` directory. 
 - Run `yarn install` to install the dependencies. The simple webpage uses [broswerify](http://browserify.org/) to bundle contractkit into a javascript file usable by the browser. Run `browserify index.js -o bundle.js` after editing `index.js` to see the updates in the page.
-- Run `yarn dev` to start the [lihttps://www.npmjs.com/package/lite-serverserver](url) to serve the page at localhost:3000
+- Run `yarn dev` to start the [lite server](https://www.npmjs.com/package/lite-server) to serve the page at localhost:3000
