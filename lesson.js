@@ -66,7 +66,7 @@ let EthTx = {
 
     // the follwoing fields are optional
     nonce: 1,
-    chainId: "42220",
+    chainId: "44787",             // Alfajores testnet
     data: "0xabc1",               // data to send for smart contract execution
     value: 10,
     gasPrice: "5000000000",       // 0.5 Gwei
@@ -98,7 +98,7 @@ let CeloTx = {
     value: 10,
     gas: 200000,
     nonce: 1,
-    chainId: "42220",             // Celo mainnet chainId
+    chainId: "44787",             // Celo Alfajores testnet chainId
     data: "0xabc1",               // data to send for smart contract execution
     gasPrice: "5000000000",       // 0.5 Gwei
     gatewayFee: 1,       
