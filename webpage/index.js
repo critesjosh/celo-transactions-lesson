@@ -10,7 +10,7 @@ let kit
 let cUSDcontract
 
 let anAddress = '0xD86518b29BB52a5DAC5991eACf09481CE4B0710d'
-let amount = 100000
+let amount = "10000000000000000"
 
 const connectCeloWallet = async function () {
   if (window.celo) {
@@ -24,6 +24,8 @@ const connectCeloWallet = async function () {
       kit.defaultAccount = accounts[0]
 
       cUSDcontract = new kit.web3.eth.Contract(erc20Abi, cUSDContractAddress)
+      
+      getBalance()
     } catch (error) {
       console.log(`⚠️ ${error}.`)
     }
@@ -36,6 +38,7 @@ async function send() {
   const result = await cUSDcontract.methods
     .transfer(anAddress, amount)
     .send({ from: kit.defaultAccount })
+  getBalance()
   return result
 }
 
