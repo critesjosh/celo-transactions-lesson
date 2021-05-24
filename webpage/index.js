@@ -39,6 +39,7 @@ async function send() {
     .transfer(anAddress, amount)
     .send({ from: kit.defaultAccount })
   getBalance()
+  showTxHash(result.transactionHash) 
   return result
 }
 
@@ -48,11 +49,16 @@ const getBalance = async function () {
   document.querySelector("#balance").textContent = cUSDBalance
 }
 
+const showTxHash = async function(transactionHash){
+  let link = `https://alfajores-blockscout.celo-testnet.org/tx/${transactionHash}`
+  document.querySelector("#txHash").textContent = link
+  document.getElementById("txHash").href = link
+}
 
 document.querySelector("#login").addEventListener("click", async (e) => {
   connectCeloWallet()
 })  
 
 document.querySelector("#send").addEventListener("click", async (e) => {
-    console.log(send())
+    send()
 }) 
