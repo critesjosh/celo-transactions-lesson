@@ -184,7 +184,7 @@ async function sendCELOTx(){
     let tx = await kit.sendTransaction(CeloTx)
     let receipt = await tx.waitReceipt()
 
-    console.log(`CELO tx: https://alfajores-blockscout.celo-testnet.org/tx/${receipt.transactionHash}/token-transfers `)
+    console.log(`CELO tx: https://alfajores-blockscout.celo-testnet.org/tx/${receipt.transactionHash}`)
 }
 
 // sendCELOTx()
