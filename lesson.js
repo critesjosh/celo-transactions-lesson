@@ -33,6 +33,9 @@ const celo_ethers = require('@celo-tools/celo-ethers-wrapper')
 require('dotenv').config({path: '.env'})
 const { ethers } = require('ethers')
 
+// Connect to Forno
+// https://docs.celo.org/developer-guide/forno
+
 const web3 = new Web3(`https://alfajores-forno.celo-testnet.org`)
 
 //const web3 = new Web3('https://forno.celo.org')
