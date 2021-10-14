@@ -33,7 +33,7 @@ const celo_ethers = require('@celo-tools/celo-ethers-wrapper')
 require('dotenv').config({path: '.env'})
 const { ethers } = require('ethers')
 
-const web3 = new Web3(`https://celo-alfajores--rpc.datahub.figment.io/apikey/${process.env.FIGMENT_API_KEY}/`)
+const web3 = new Web3(`https://alfajores-forno.celo-testnet.org`)
 
 //const web3 = new Web3('https://forno.celo.org')
 
