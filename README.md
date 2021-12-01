@@ -24,7 +24,7 @@ Recording:
 
 ### Requirements
 
-- [Celo extension wallet](https://chrome.google.com/webstore/detail/celoextensionwallet/kkilomkmpmkbdnfelcpgckmpcaemjcdh)
+- [Metamask](https://metamask.io)
 - `cd` into the `webpage` directory.
 - Run `yarn install` to install the dependencies. The simple webpage uses [broswerify](http://browserify.org/) to bundle contractkit into a javascript file usable by the browser. It also uses [watchify](https://www.npmjs.com/package/watchify) to watch `index.js` and `index.html` for changes, and will automatically re-bundle everything for you when a change is detected.
 - Run `yarn dev` to start the [lite server](https://www.npmjs.com/package/lite-server) and watchify to serve the page at localhost:3000

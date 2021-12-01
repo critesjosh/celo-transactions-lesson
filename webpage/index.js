@@ -12,12 +12,12 @@ let cUSDcontract
 let anAddress = '0xD86518b29BB52a5DAC5991eACf09481CE4B0710d'
 let amount = "10000000000000000"
 
-const connectCeloWallet = async function () {
-  if (window.celo) {
+const connectWallet = async function () {
+  if (window.ethereum) {
     try {
-      await window.celo.enable()
+      await window.ethereum.request({ method: 'eth_requestAccounts' })
 
-      const web3 = new Web3(window.celo)
+      const web3 = new Web3(window.ethereum)
       kit = ContractKit.newKitFromWeb3(web3)
 
       const accounts = await kit.web3.eth.getAccounts()
@@ -30,7 +30,7 @@ const connectCeloWallet = async function () {
       console.log(`⚠️ ${error}.`)
     }
   } else {
-    console.log("⚠️ Please install the CeloExtensionWallet.")
+    console.log("⚠️ Please install Metamask.")
   }
 }
 
@@ -56,7 +56,7 @@ const showTxHash = async function(transactionHash){
 }
 
 document.querySelector("#login").addEventListener("click", async (e) => {
-  connectCeloWallet()
+  connectWallet()
 })  
 
 document.querySelector("#send").addEventListener("click", async (e) => {
