@@ -291,7 +291,7 @@ async function sendCELOandCUSD(){
 */
 
 async function sendCELOWithEthers(){
-    const provider = new celo_ethers.CeloProvider(`https://celo-alfajores--rpc.datahub.figment.io/apikey/${process.env.FIGMENT_API_KEY}/`)
+    const provider = new celo_ethers.CeloProvider(`https://alfajores-forno.celo-testnet.org`)
     await provider.ready
     const wallet = new celo_ethers.CeloWallet(account.privateKey, provider)
 
@@ -303,4 +303,4 @@ async function sendCELOWithEthers(){
     const txReceipt = await txResponse.wait()
     console.log(`celo-ethers Transaction: https://alfajores-blockscout.celo-testnet.org/tx/${txReceipt.transactionHash}/`)
 }
-//sendCELOWithEthers()
+sendCELOWithEthers()
